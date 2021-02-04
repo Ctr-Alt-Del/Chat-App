@@ -7,9 +7,7 @@ const TheirMessage = ({ lastmessage, message }) => {
             color: "white",
             
     }
-    const theirImage = {
-        backgroundImage: `url(${message?.sender?.avatar})`
-    }
+
     return (
         <div className="message=row">
             {isFirstMessageByUser && (
