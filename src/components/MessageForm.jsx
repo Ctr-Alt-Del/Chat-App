@@ -23,18 +23,18 @@ const MessageForm = (props) => {
     }
 
     return (
-        <form className="message-form" onSubmit={handleSubmit}>
+        <form class="message-form" onSubmit={handleSubmit}>
             <input
                 type="text"
-                className="message-input"
+                class="message-input"
                 placeholder="Send a message..."
                 value={value}
                 onChange={handleChange}
                 onSubmit={handleSubmit}
             />
             <label htmlFor="upload-button">
-                <span className="image-button">
-                    <PictureOutlined className="picture-icon" />
+                <span class="image-button">
+                    <PictureOutlined class="picture-icon" />
                 </span>
             </label>
             <input 
@@ -44,8 +44,8 @@ const MessageForm = (props) => {
                 style={{ display: 'none'}}
                 onChange={handleUpload}
             />
-            <button type="submit" className="send-button">
-                <SendOutlined className="send-icon" />
+            <button type="submit" class="send-button">
+                <SendOutlined class="send-icon" />
             </button>
         </form>
     )

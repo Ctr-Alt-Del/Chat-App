@@ -21,20 +21,31 @@ const LoginForm = () => {
     }
 
     return (
-        <div classname="wrapper">
-            <div className="form">
-                <h1 className="title">Chat Application</h1>
+        <div class="wrapper">
+            <div class="form">
+                <h1 class="title">Chat Application</h1>
                 <form onSubmit={handleSubmit}>
-                    <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="input" placeolder="Username" required/>
-                    <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeolder="Password" required/>
+                    <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} class="input" placeolder="Username" required/>
+                    <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} class="input" placeolder="Password" required/>
                     <div align="center">
-                        <button type="submit" className="button">
+                        <button type="submit" class="button">
                             <span>Start Chatting</span>
                         </button>
                     </div>
-                    <h2 className="error">{error}</h2>
+                    <h2 class="error">{error}</h2>
                 </form>
+                <div class="demoUsers">
+                    <h2><b>Demo Users</b></h2>
+                    <br/>
+                    <h3 class="test">Username: User 1</h3>
+                    <h3>Password: UserDemo1</h3>
+                    <h3>Username: User 2</h3>
+                    <h3>Password: UserDemo2</h3>
+                    <br/>
+                </div>
             </div>
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
         </div>
     )
 }
